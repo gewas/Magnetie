@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<GridPane fx:controller="tool.Main"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+    <Text id="title" text="Magnetie"
+          GridPane.columnIndex="0" GridPane.rowIndex="0"
+          GridPane.columnSpan="2"/>
+
+    <Label text="Type:"
+           GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <!--  选项输入  -->
+    <ChoiceBox fx:id="cbType"
+               value="BitTorrent"
+               GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <String fx:value="BitTorrent" />
+            <String fx:value="MD5"/>
+            <String fx:value="SHA-1"/>
+            <String fx:value="eD2k"/>
+    </ChoiceBox>
+
+    <Label text="Hash:"
+           GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+
+    <TextField fx:id="tfHash"
+               GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+    <HBox spacing="10" alignment="BOTTOM_RIGHT"
+          GridPane.columnIndex="1" GridPane.rowIndex="7">
+        <Button text="Generate"
+                onAction="#handleButtonAction"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@main.css"/>
+    </stylesheets>
+</GridPane>

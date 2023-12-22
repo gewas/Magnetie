@@ -1,0 +1,21 @@
+.root{
+    -fx-background-color: #f4f4f4;
+    -fx-font-family: "Tahoma, Geneva, sans-serif, serif, monospace, Arial";
+}
+
+#title {
+    -fx-font-size: 32px;
+    -fx-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+.label{
+    -fx-font-size: 16px;
+    -fx-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
