@@ -58,6 +58,7 @@ public class Main extends Application implements Initializable {
             StringSelection stringSelection = new StringSelection(magnetLink);
             Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
             clipboard.setContents(stringSelection, null);
+            tfHash.setText(null);
         }
     }
 
