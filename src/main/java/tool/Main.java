@@ -31,7 +31,7 @@ public class Main extends Application implements Initializable {
     public void handleButtonAction(ActionEvent e) {
         String type = cbType.getValue();
         String hash = tfHash.getText();
-        if (hash == null || !hash.matches("[a-fA-F0-9]+")) {
+        if (hash == null || !hash.matches("[a-zA-Z0-9]+")) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText("Invalid input");
             alert.setContentText("Please input a valid hash");
